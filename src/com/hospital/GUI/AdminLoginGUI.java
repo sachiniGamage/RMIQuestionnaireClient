@@ -92,7 +92,7 @@ public class AdminLoginGUI {
 		JButton btnNewButton = new JButton("Login");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//1
+				
 				String userName = txtUserName.getText();
 				String pw  = passwordField.getText();
   
@@ -121,7 +121,7 @@ public class AdminLoginGUI {
 						// TODO: handle exception
 						System.out.println(e1);
 					}
-//				
+				
 				}
 			}
 		});

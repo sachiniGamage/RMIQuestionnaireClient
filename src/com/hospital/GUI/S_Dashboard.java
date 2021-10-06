@@ -110,14 +110,7 @@ public class S_Dashboard {
 				frame.dispose();
 			}
 		});
-//		btnNewButton_1.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//				frame.dispose();
-//				OptionGui option = new OptionGui();
-//				option.main(null);
-//				frame.dispose();
-//			}
-//		});
+
 		btnNewButton_1.setBounds(335, 8, 89, 23);
 		frame.getContentPane().add(btnNewButton_1);
 		
@@ -393,8 +386,7 @@ public class S_Dashboard {
 					    System.out.println("Image created");
 					    
 					}
-					
-					
+
 
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Run Server First", "ALERT",JOptionPane.WARNING_MESSAGE);
