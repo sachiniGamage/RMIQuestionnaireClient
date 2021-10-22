@@ -7,8 +7,6 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
-//import com.hospital.client.Client;
 import com.hospital.rmiinterface.RMIInterface;
 
 import javax.swing.JButton;
@@ -160,8 +158,7 @@ public class S_Dashboard {
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
 						
-					}
-					else if(que == "Que2") {
+					}else if(que == "Que2") {
 						
 						int[] arr = RMIInterface.BarChart(2);
 						//bar chart
@@ -192,8 +189,7 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que3") {
+					}else if(que == "Que3") {
 						
 						int[] arr = RMIInterface.BarChart(3);
 						//bar chart
@@ -224,8 +220,7 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que4") {
+					}else if(que == "Que4") {
 						
 						int[] arr = RMIInterface.BarChart(4);
 						//bar chart
@@ -256,8 +251,7 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que5") {
+					}else if(que == "Que5") {
 						
 						int[] arr = RMIInterface.BarChart(5);
 						//bar chart
@@ -288,9 +282,8 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que6") {
-//						
+					}else if(que == "Que6") {
+
 						int[] arr = RMIInterface.BarChart(6);
 						//bar chart
 						DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -320,8 +313,7 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que7") {
+					}else if(que == "Que7") {
 						
 						int[] arr = RMIInterface.BarChart(7);
 						//bar chart
@@ -352,8 +344,7 @@ public class S_Dashboard {
 					    File BarChart = new File("BarChart.jpeg");
 					    ChartUtilities.saveChartAsJPEG( BarChart , chart , width , height );
 					    System.out.println("Image created");
-					}
-					else if(que == "Que8") {
+					}else if(que == "Que8") {
 						
 						int[] arr = RMIInterface.BarChart(8);
 						//bar chart
@@ -386,11 +377,8 @@ public class S_Dashboard {
 					    System.out.println("Image created");
 					    
 					}
-
-
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Run Server First", "ALERT",JOptionPane.WARNING_MESSAGE);
-				
 				}
 			}
 		});
@@ -416,7 +404,6 @@ public class S_Dashboard {
 		});
 		btnNewButton_3.setBounds(335, 34, 89, 23);
 		frame.getContentPane().add(btnNewButton_3);
-		
 		
 	}
 }

@@ -81,8 +81,6 @@ String Question6="";
 		}
 		System.out.println(output);
 		
-		
-		
 		JLabel lblNewLabel_1 = new JLabel(output);
 		lblNewLabel_1.setBounds(22, 76, 247, 14);
 		frame.getContentPane().add(lblNewLabel_1);
@@ -159,8 +157,7 @@ String Question6="";
 						q6.main7();
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else if(rdbtnNewRadioButton_1.isSelected()){
+					}else if(rdbtnNewRadioButton_1.isSelected()){
 						ans = rdbtnNewRadioButton_1.getText();
 						
 						frame.dispose();
@@ -168,8 +165,7 @@ String Question6="";
 						q6.main7();
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else if(rdbtnNewRadioButton_2.isSelected()){
+					}else if(rdbtnNewRadioButton_2.isSelected()){
 						ans = rdbtnNewRadioButton_2.getText();
 						
 						frame.dispose();
@@ -177,8 +173,7 @@ String Question6="";
 						q6.main7();
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else if(rdbtnNewRadioButton_3.isSelected()){
+					}else if(rdbtnNewRadioButton_3.isSelected()){
 						ans = rdbtnNewRadioButton_3.getText();
 						
 						frame.dispose();
@@ -186,8 +181,7 @@ String Question6="";
 						q6.main7();
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else if(rdbtnNewRadioButton_4.isSelected()){
+					}else if(rdbtnNewRadioButton_4.isSelected()){
 						ans = rdbtnNewRadioButton_4.getText();
 						
 						frame.dispose();
@@ -195,14 +189,12 @@ String Question6="";
 						q6.main7();
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else {
+					}else {
 						JOptionPane.showMessageDialog(null, "please select ");
 					}
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Please Run the Server", " ",JOptionPane.WARNING_MESSAGE);
 				}
-				
 			}
 		});
 		btnNewButton.setBounds(313, 227, 89, 23);

@@ -5,11 +5,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 
-
 import com.hospital.DB.DBConnection;
 import com.hospital.rmiinterface.RMIInterface;
-
-
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -68,13 +65,10 @@ public class Questionnaire1GUI {
 		lblNewLabel.setBounds(170, 32, 138, 14);
 		frame.getContentPane().add(lblNewLabel);
 		
-		
-		
 		//get the question and set it to the jlabel
 		String output = null;
 		try {
 			RMIInterface RMIInterface = (RMIInterface)Naming.lookup("rmi://localhost:5099/hello");
-			
 			output = RMIInterface.que8SQL(1);
 		} catch (RemoteException e2) {
 			// TODO Auto-generated catch block
@@ -88,10 +82,6 @@ public class Questionnaire1GUI {
 		}
 		System.out.println(output);
 		
-		
-		
-		
-		
 		JLabel lblNewLabel_1 = new JLabel(output);
 		lblNewLabel_1.setBounds(22, 76, 263, 14);
 		frame.getContentPane().add(lblNewLabel_1);
@@ -99,9 +89,7 @@ public class Questionnaire1GUI {
 		final JRadioButton rdoVerySatisfied = new JRadioButton("Very satisfied");
 		rdoVerySatisfied.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-					Question1 = "Very satisfied";
-				
+				Question1 = "Very satisfied";
 			}
 		});
 		rdoVerySatisfied.setForeground(Color.WHITE);
@@ -166,60 +154,38 @@ public class Questionnaire1GUI {
 				
 				if(rdoVerySatisfied.isSelected()){
 					ans = rdoVerySatisfied.getText();
-					
-					 
-						frame.dispose();
-						Questionnaire2 q1 = new Questionnaire2();
-						q1.main2();
-						frame.dispose();
-						
-						
-					
-					
+					frame.dispose();
+					Questionnaire2 q1 = new Questionnaire2();
+					q1.main2();
+					frame.dispose();
 				}
 				else if(rdoSatisfied.isSelected()){
 					ans = rdoVerySatisfied.getText();
-					
-					
-						frame.dispose();
-						Questionnaire2 q1 = new Questionnaire2();
-						q1.main2();
-						frame.dispose();
-						
-						
+					frame.dispose();
+					Questionnaire2 q1 = new Questionnaire2();
+					q1.main2();
+					frame.dispose();	
 				}
 				else if(rdoNeutral.isSelected()){
 					ans = rdoVerySatisfied.getText();
-					
-					
-						frame.dispose();
-						Questionnaire2 q1 = new Questionnaire2();
-						q1.main2();
-						frame.dispose();
-						
-						
+					frame.dispose();
+					Questionnaire2 q1 = new Questionnaire2();
+					q1.main2();
+					frame.dispose();
 				}
 				else if(rdoUnsatisfied.isSelected()){
 					ans = rdoVerySatisfied.getText();
-					
-					
-						frame.dispose();
-						Questionnaire2 q1 = new Questionnaire2();
-						q1.main2();
-						frame.dispose();
-						
-						
+					frame.dispose();
+					Questionnaire2 q1 = new Questionnaire2();
+					q1.main2();
+					frame.dispose();
 				}
 				else if(rdoVeryUnsatisfied.isSelected()){
 					ans = rdoVerySatisfied.getText();
-					
-					
-						frame.dispose();
-						Questionnaire2 q1 = new Questionnaire2();
-						q1.main2();
-						frame.dispose();
-						
-						
+					frame.dispose();
+					Questionnaire2 q1 = new Questionnaire2();
+					q1.main2();
+					frame.dispose();	
 				}
 				else {
 					JOptionPane.showMessageDialog(null, "please select ");
@@ -227,9 +193,6 @@ public class Questionnaire1GUI {
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
 				}
-
-				
-				
 			}
 		});
 		btnNewButton.setBounds(313, 227, 89, 23);

@@ -81,8 +81,6 @@ String Question4="";
 		}
 		System.out.println(output);
 		
-		
-		
 		JLabel lblNewLabel_1 = new JLabel(output);
 		lblNewLabel_1.setBounds(22, 76, 412, 14);
 		frame.getContentPane().add(lblNewLabel_1);
@@ -202,9 +200,6 @@ String Question4="";
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Please Run the Server", " ",JOptionPane.WARNING_MESSAGE);
 				}
-				
-				
-				
 			}
 		});
 		btnNewButton.setBounds(313, 227, 89, 23);

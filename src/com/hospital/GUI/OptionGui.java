@@ -12,8 +12,6 @@ import javax.swing.JTextField;
 import com.hospital.DB.DBConnection;
 import com.hospital.rmiinterface.RMIInterface;
 
-//import com.hospital.server.DBConnection;
-
 import javax.swing.JCheckBox;
 import javax.swing.AbstractButton;
 import javax.swing.JButton;
@@ -102,23 +100,14 @@ private JTextField textField_1;
 				
 		        ResultSet rs = null;
 		        String ans = null;
-		        
 		        String que = textField.getText(); 
-		        
 		        int queID = Integer.parseInt(textField_1.getText());
 		        
 		        try {
-		        
 		        	RMIInterface RMIInterface = (RMIInterface)Naming.lookup("rmi://localhost:5099/hello");
 					System.out.println("1");
-					
-					
 					RMIInterface.UpdateQue(queID, que);
-					
 					JOptionPane.showMessageDialog(null, "Updated");
-
-		        	
-		        	
 		        }catch(Exception e1) {
 		        	System.out.println( e1);
 		        }
@@ -154,7 +143,6 @@ private JTextField textField_1;
 		});
 		btnNewButton_2.setBounds(84, 165, 89, 23);
 		frame.getContentPane().add(btnNewButton_2);
-		
 		
 	}
 }

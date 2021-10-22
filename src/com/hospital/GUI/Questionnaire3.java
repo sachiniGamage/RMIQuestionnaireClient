@@ -62,7 +62,6 @@ String Question3="";
 		lblNewLabel.setBounds(170, 32, 109, 14);
 		frame.getContentPane().add(lblNewLabel);
 		
-		
 		//get the question and set it to the jlabel
 		String output = null;
 		try {
@@ -80,8 +79,6 @@ String Question3="";
 			e1.printStackTrace();
 		}
 		System.out.println(output);
-		
-		
 		
 		JLabel lblNewLabel_1 = new JLabel(output);
 		lblNewLabel_1.setBounds(22, 76, 269, 14);
@@ -159,9 +156,9 @@ String Question3="";
 						frame.setVisible(true);
 						frame.dispose();
 						
-						}catch (Exception e1) {
-							JOptionPane.showMessageDialog(null,"Please Run the Server", " ",JOptionPane.WARNING_MESSAGE);
-						}
+					}catch (Exception e1) {
+						JOptionPane.showMessageDialog(null,"Please Run the Server", " ",JOptionPane.WARNING_MESSAGE);
+					}
 				}
 				else if(rdbtnNewRadioButton_1.isSelected()){
 					ans = rdbtnNewRadioButton_1.getText();
@@ -175,9 +172,9 @@ String Question3="";
 						frame.setVisible(true);
 						frame.dispose();
 						
-						}catch (Exception e1) {
-							JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
-						}
+					}catch (Exception e1) {
+						JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
+					}
 				}
 				else if(rdbtnNewRadioButton_2.isSelected()){
 					ans = rdbtnNewRadioButton_2.getText();
@@ -191,9 +188,9 @@ String Question3="";
 						frame.setVisible(true);
 						frame.dispose();
 						
-						}catch (Exception e1) {
-							JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
-						}
+					}catch (Exception e1) {
+						JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
+					}
 				}
 				else if(rdbtnNewRadioButton_3.isSelected()){
 					ans = rdbtnNewRadioButton_3.getText();
@@ -207,9 +204,9 @@ String Question3="";
 						frame.setVisible(true);
 						frame.dispose();
 						
-						}catch (Exception e1) {
-							JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
-						}
+					}catch (Exception e1) {
+						JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
+					}
 				}
 				else if(rdbtnNewRadioButton_4.isSelected()){
 					ans = rdbtnNewRadioButton_4.getText();
@@ -223,16 +220,13 @@ String Question3="";
 						frame.setVisible(true);
 						frame.dispose();
 						
-						}catch (Exception e1) {
-							JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
-						}
+					}catch (Exception e1) {
+						JOptionPane.showMessageDialog(null,"Internal error, Server is not available", " ",JOptionPane.WARNING_MESSAGE);
+					}
 				}
 				else {
 					JOptionPane.showMessageDialog(null, "please select ");
 				}
-				
-				
-				
 				
 			}
 		});

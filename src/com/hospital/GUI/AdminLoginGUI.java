@@ -106,14 +106,13 @@ public class AdminLoginGUI {
 						System.out.println("1");
 						if(RMIInterface.login(userName.toString(), pw.toString())) {
 
-								txtUserName.setText(userName);
-								passwordField.setText(pw);
+							txtUserName.setText(userName);
+							passwordField.setText(pw);
 							frame.dispose();
 							S_Dashboard q8 = new S_Dashboard();
 							q8.main(null);
 							frame.setVisible(true);
 							frame.dispose();
-							
 							
 						}
 						
@@ -121,7 +120,6 @@ public class AdminLoginGUI {
 						// TODO: handle exception
 						System.out.println(e1);
 					}
-				
 				}
 			}
 		});
@@ -141,7 +139,6 @@ public class AdminLoginGUI {
 		});
 		btnNewButton_1.setBounds(10, 11, 46, 23);
 		frame.getContentPane().add(btnNewButton_1);
-		
 		
 	}
 }

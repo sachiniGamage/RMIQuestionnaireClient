@@ -199,8 +199,6 @@ String Question5 = "";
 				}catch (Exception e1) {
 					JOptionPane.showMessageDialog(null,"Please Run the Server", " ",JOptionPane.WARNING_MESSAGE);
 				}
-				
-				
 			}
 		});
 		btnNewButton.setBounds(313, 227, 89, 23);

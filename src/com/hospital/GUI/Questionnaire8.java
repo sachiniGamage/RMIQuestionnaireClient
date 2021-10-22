@@ -66,7 +66,6 @@ public class Questionnaire8 {
 		String output = null;
 		try {
 			RMIInterface RMIInterface = (RMIInterface)Naming.lookup("rmi://localhost:5099/hello");
-			
 			output = RMIInterface.que8SQL(8);
 		} catch (RemoteException e2) {
 			// TODO Auto-generated catch block
@@ -115,35 +114,27 @@ public class Questionnaire8 {
 				try {
 					RMIInterface RMIInterface = (RMIInterface)Naming.lookup("rmi://localhost:5099/hello");
 					String output1 = RMIInterface.que8(Question8);
-//					lblNewLabel_1.setText(output);
 					if(rdbtnNewRadioButton.isSelected()){
 						ans = rdbtnNewRadioButton.getText();
 						
 						int dialogButton = JOptionPane.OK_OPTION;
-					
-						
 						JOptionPane.showMessageDialog(null, "Thank You! go to index page? ");
 						frame.dispose();
 						IndexGUI q8 = new IndexGUI();
 						q8.main(null);
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					else if(rdbtnNewRadioButton_1.isSelected()){
+					}else if(rdbtnNewRadioButton_1.isSelected()){
 						ans = rdbtnNewRadioButton_1.getText();
 						
 						int dialogButton = JOptionPane.OK_OPTION;
-					
-						
 						JOptionPane.showMessageDialog(null, "Thank You! go to index page? ");
 						frame.dispose();
 						IndexGUI q8 = new IndexGUI();
 						q8.main(null);
 						frame.setVisible(true);
 						frame.dispose();
-					}
-					
-					else {
+					}else {
 						JOptionPane.showMessageDialog(null, "please select ");
 					}
 				
@@ -152,10 +143,10 @@ public class Questionnaire8 {
 				}
 				
 					
-				}
-				
 			}
-		);
+				
+		}
+	);
 		btnNewButton.setBounds(313, 227, 89, 23);
 		frame.getContentPane().add(btnNewButton);
 		
